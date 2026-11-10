@@ -25,7 +25,7 @@ The first capstone milestone (Phase 0) is a script that generates a synthetic `t
 ## Repository conventions
 
 - Work happens on feature branches (e.g. `feature/phase1`) pushed to `origin`, not directly on `main`.
-- `Questions/` holds one workbook per phase (e.g. `Questions/phase0.md`) containing questions, the owner's answers and Claude's reviews together. Screenshots go in `Questions/images/`.
+- `Questions/` holds one folder per phase (e.g. `Questions/phase0/`) with one file per session (e.g. `week1_session3.md`) containing that session's questions, the owner's answers and Claude's reviews together. Each phase folder has a `README.md` indexing its sessions and their status, and an `images/` folder for screenshots.
 - `Solutions/` is gitignored, so it exists only locally. It held answers before the workbook format and is no longer the place for them.
 
 ## Keeping this file current
@@ -37,5 +37,5 @@ Once a dependency manifest (e.g. `environment.yml`), a test runner, a linter, or
 - Explain concepts before writing code. Prefer hints over full solutions.
 - Let me write the code; review it and point out mistakes.
 - Never use real bank data; synthetic data only.
-- When asking questions, create question file inside the questions folder D:\FinPal\Questions . Maintain one file per phase.
-- Questions, my answers and your reviews all live in that same phase file. Per session the order is: Questions, then "Answers, attempt 1", "Review 1", "Answers, attempt 2", "Review 2", and so on. I add each new attempt below the last review; you append each review below my latest attempt and never edit my answers.
+- When asking questions, create question file inside the questions folder D:\FinPal\Questions . Maintain one folder per phase and, inside it, one file per session.
+- Questions, my answers and your reviews all live in that same session file. Within the file the order is: Questions, then "Answers, attempt 1", "Review 1", "Answers, attempt 2", "Review 2", and so on. I add each new attempt below the last review; you append each review below my latest attempt and never edit my answers.

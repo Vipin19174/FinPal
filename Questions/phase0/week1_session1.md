@@ -1,18 +1,6 @@
-# Phase 0: Foundations (weeks 1–3)
+# Phase 0, week 1, session 1: terminal, environments, Git
 
-This is the single workbook for Phase 0. Each session has its questions, then rounds of answers and reviews in order:
-
-1. **Questions**: written by the tutor.
-2. **Answers, attempt N**: written by you, in your own words. Add a new attempt below the last review; do not edit old attempts.
-3. **Review N**: written by the tutor after you ask for a review.
-
-A session is closed when its review says so.
-
----
-
-## Week 1, session 1: terminal, environments, Git
-
-**Status: closed.** Final mark 7/7 after two attempts. One follow-up is open (see Review 2).
+**Status: closed.** Final mark 7/7 after two attempts; the follow-up from Review 2 was answered in attempt 3.
 
 ### Questions
 

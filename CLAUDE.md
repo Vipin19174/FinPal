@@ -4,16 +4,33 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-FinPal is a personal finance agent. The repository is at its initial commit, which tracks only `README.md` and a Python `.gitignore`. `test.py` is an empty, untracked placeholder, not a test suite. There is no application code, dependency manifest, build, lint, or test setup yet.
+FinPal is a personal finance agent, built as the capstone of a 26-week self-study roadmap in agentic AI engineering. The repository is a learning project first: the owner writes the code, and Claude acts as tutor and reviewer (see "How to work with me").
+
+There is no application code yet. `test.py` is an empty placeholder, not a test suite, and there is no dependency manifest, build, lint, or test setup.
+
+## Roadmap
+
+The plan lives in a Claude doc: https://claude.ai/artifact/WoV2v85gMktDRrmHZdJPcL. Read it with the Claude Docs tools (not a web fetch) when a session starts with "Tutor: ..." or refers to a phase, week, quiz, milestone or exit test. It defines, per phase, the weekly topics, a mini-project, a capstone milestone and an exit test, plus a progress tracker.
+
+Planned build order, each phase adding a layer to the same agent: Python and Git foundations → hand-written tool-calling loop on Bedrock (`finpal/llm.py`) → Strands agent with tools → FastAPI service and Streamlit UI in Docker → Databricks data and RAG → multi-agent with MCP and human approval → guardrails, MLflow tracing and evals → Kong, personas and AgentCore deployment.
+
+The first capstone milestone (Phase 0) is a script that generates a synthetic `transactions.json` (date, merchant, amount, category).
 
 ## Environment
 
-- Python project. VS Code is configured (`.vscode/settings.json`, currently untracked) to use **conda** as both the environment manager and the package manager, so create environments and install packages with conda rather than venv/pip unless told otherwise.
-- Development happens on Windows (PowerShell).
+- Windows, PowerShell in the VS Code terminal.
+- Conda environment `finpal` (Python 3.12) at `C:\Users\vipin\.conda\envs\finpal`; only pip and setuptools are installed so far. Activate with `conda activate finpal`. VS Code (`.vscode/settings.json`) uses conda as environment and package manager, so install packages with conda rather than venv/pip unless told otherwise.
+- Conda (`C:\ProgramData\anaconda3`) is not on PATH in non-interactive shells, where plain `python` is the global 3.13. To run something in the project environment from a tool call, use `C:\Users\vipin\.conda\envs\finpal\python.exe` directly.
+
+## Repository conventions
+
+- Work happens on feature branches (e.g. `feature/phase1`) pushed to `origin`, not directly on `main`.
+- `Solutions/` holds the owner's answers to exercises and is gitignored, so it exists only locally.
+- `Questions/` holds the questions Claude asks, one file per phase.
 
 ## Keeping this file current
 
-No commands or architecture are documented here because none exist yet. Once a dependency manifest (e.g. `environment.yml`), a test runner, a linter, or the agent's module structure is added, record the commands (including how to run a single test) and the high-level architecture in this file.
+Once a dependency manifest (e.g. `environment.yml`), a test runner, a linter, or the agent's module structure is added, record the commands (including how to run a single test) and the high-level architecture in this file.
 
 ## How to work with me
 - I am a beginner learning agentic AI engineering by building this project.

@@ -218,3 +218,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# custom solution folders: will have all the neccessary answers to the questions asked
+Solutions/

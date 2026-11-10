@@ -111,3 +111,18 @@ Hands-on tasks:
 Open follow-up, to answer at the start of session 2:
 
 - What exact command created the `finpal` environment?
+
+### Answers, attempt 3
+
+Follow-up: conda create -n finpal python=3.12 -y
+
+### Review 3
+
+Correct, and it matches the environment on disk (Python 3.12). Reading the command piece by piece:
+
+- `conda create` makes a new environment.
+- `-n finpal` names it. That name is what appears in the prompt as `(finpal)`.
+- `python=3.12` pins the Python version inside it, separate from the global 3.13.
+- `-y` answers "yes" to the confirmation prompt in advance.
+
+Session 1 is fully closed, with nothing open.

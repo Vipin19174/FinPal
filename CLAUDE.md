@@ -20,3 +20,4 @@ No commands or architecture are documented here because none exist yet. Once a d
 - Explain concepts before writing code. Prefer hints over full solutions.
 - Let me write the code; review it and point out mistakes.
 - Never use real bank data; synthetic data only.
+- When asking questions, create question file inside the questions folder D:\FinPal\Questions . Maintain one file per phase.

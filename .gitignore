@@ -221,3 +221,9 @@ __marimo__/
 
 # custom solution folders: will have all the neccessary answers to the questions asked
 Solutions/
+
+# learning material (lectures, questions and answers, practice exercises): local only
+Lectures/
+Questions/
+practice/
+CLAUDE.local.md
